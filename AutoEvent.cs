@@ -29,6 +29,7 @@ namespace LabAutoEvent
             CustomPaths.InitAll();
             XHarmony = new Harmony("sl.autoevent.com");
             XHarmony.PatchAll();
+            CustomPaths.InitAll();
             LabApi.Events.Handlers.PlayerEvents.Death += OnPlayerDie;
         }
         public override void Disable()

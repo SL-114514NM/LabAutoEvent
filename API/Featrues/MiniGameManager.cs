@@ -26,6 +26,10 @@ namespace LabAutoEvent.API.Featrues
                 Logger.Warn("已记录ID为"+miniGame.GameId+"的小游戏，无法重复记录");
                 return;
             }
+            if(!miniGame.WillLoad)
+            {
+                return;
+            }
             MiniGames.Add(miniGame);
         }
         public static void RemoveTypeToList(Type type)

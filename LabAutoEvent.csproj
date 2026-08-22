@@ -106,6 +106,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="API\AutoEventAPI.cs" />
+    <Compile Include="API\Commands\AutoEventCommand.cs" />
+    <Compile Include="API\Commands\ListCommand.cs" />
+    <Compile Include="API\Commands\StartCommand.cs" />
+    <Compile Include="API\Commands\StopCommand.cs" />
     <Compile Include="API\CustomPaths.cs" />
     <Compile Include="API\Featrues\IMiniGameBase.cs" />
     <Compile Include="API\Featrues\MapInfo.cs" />
